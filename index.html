@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        QUIS AHMAD RAIHAN WINANDA
+    </title>
+</head>
+
+<body>
+    <center>
+        <h3>
+            DAFTAR HARGA BUAH
+        </h3>
+        <table border="2">
+            <tr>
+                <th>NO</th>
+                <th>Nama Buah</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td> APEL</td>
+                <td>Rp.23.000/Kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> PISANG </td>
+                <td>Rp.12.000/Kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td> ANGGUR</td>
+                <td>Rp.35.000/Kg</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> MANGGA</td>
+                <td>Rp.17.000/Kg</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td> RAMBUTAN</td>
+                <td>Rp.15.000/Kg</td>
+            </tr>
+        </table>
+
+        <hr><br>
+        <label for="buah">Pilih buah : </label>
+        <select id="buah">
+		<option value="Apel">APEL</option>
+		<option value="Pisang">PISANG</option>
+		<option value="Anggur">ANGGUR</option>
+		<option value="Mangga">MANGGA</option>
+        <option value="Rambutan">RAMBUTAN</option>
+	</select>
+        <br><br>
+        <input type="number" id="kg" placeholder="berat buah(kg)" style="width: 300px;">
+        <br><br>
+        <input type="number" id="ds" placeholder=" Diskon yang di berikan (0% - 100%)" style="width: 300px;">
+        <br><br>
+        <button onclick="Hasil()">Total</button>
+        <button><a href="index.html" onclick="return confirm('Apakah anda yakin batal memesan buah ini ?')">Hapus</a></button>
+
+        <hr><br>
+        <h1>BON BELANJA ANDA</h1>
+        <p id="total"> </p>
+
+
+        <script type="text/javascript" src="penjualan.js"></script>
+    </center>
+
+</html>
